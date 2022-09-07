@@ -13,7 +13,7 @@ if [ -f "/arthas/arthas-agent.jar" ]; then
   exit 0
 else
   echo "Downloading Arthas Java Agent..."
-  wget https://github.com/alibaba/arthas/releases/download/arthas-all-"$VERSION"/arthas-bin.zip -O /arthas/arthas-bin.zip
+  wget https://ghproxy.com/https://github.com/alibaba/arthas/releases/download/arthas-all-"$VERSION"/arthas-bin.zip -O /arthas/arthas-bin.zip
   unzip /agent/arthas-bin.zip
   rm -f /arthas/arthas.properties
   mv /arthas.properties /arthas/arthas.properties
